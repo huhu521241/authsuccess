@@ -6,13 +6,13 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <!-- <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> -->
     <title>认证成功</title>
-    <!-- <script src="authoriza/jquery-2.1.4.min.js"></script> -->
+    <script src="authoriza/jquery-2.1.4.min.js"></script>
 
     <style>
         * {
             font-size:10px;
             font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-            box-sizing:border-box;
+            /* box-sizing:border-box; */
             color:#333;
         }
 
@@ -22,14 +22,14 @@
 
         .content {
             /* text-align:center; */
-            align-items: center
+            /* align-items: center */
         }
 
         #header {
             background-color:#FC5434;
             color:#FC5434;
             text-align:center;
-            padding:36px;
+            /* padding:36px; */
             height: 12rem;
         }
 
@@ -97,11 +97,13 @@
             margin: 1rem 0 1rem;
             color: #ffffff
         }
+
     </style>
 
 </head>
+
 <body>
-    <div class="content">
+    <!-- <div class="content"> -->
         <!-- <div id="header">
             <div class="banner-title">
                 <span>
@@ -121,12 +123,13 @@
                 <span href="">返回首页</span>
             </div>
         </div>
-    </div>
+
+    <!-- </div> -->
 </body>
 
 <script type="text/javascript">
     var wrong = document.getElementById('btn');  
-        wrong.onclick = function() {   
+        wrong.onclick = function() {
         // window.history.go(-1);//返回上一页  
         // window.history.back(-1);//返回上一页  
         // window.location = "./emilauth.html"
@@ -137,7 +140,7 @@
                 }
             }
         window.postMessage(JSON.stringify(postData))
-   }  
+   }
 
 </script>
 </html>
