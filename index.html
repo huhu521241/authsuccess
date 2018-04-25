@@ -77,7 +77,7 @@
             display:flex; 
             align-items:center; 
             justify-content:center;
-            margin-top: 12rem
+            margin-top: 15rem
         }
 
         .back-button-view {
@@ -100,13 +100,13 @@
 </head>
 <body>
     <div class="content">
-        <div id="header">
+        <!-- <div id="header">
             <div class="banner-title">
                 <span>
                     学历认证结果
                 </span>
             </div>
-        </div>
+        </div> -->
 
         <div class="image-view">
             <img class="image-style" src="authoriza/auto_image.png">
@@ -127,7 +127,14 @@
         wrong.onclick = function() {   
         // window.history.go(-1);//返回上一页  
         // window.history.back(-1);//返回上一页  
-        window.location = "./emilauth.html"
+        // window.location = "./emilauth.html"
+        var postData = {
+                action:"backmain",
+                params:{
+                   
+                }
+            }
+        window.postMessage(JSON.stringify(postData))
    }  
 
 </script>
