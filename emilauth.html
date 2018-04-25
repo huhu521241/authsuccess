@@ -90,7 +90,7 @@
             border-radius: 1rem
         }
         
-        .back-button-view span{
+        .back-button-view a{
             font-size: 4rem;
             margin: 1rem 0 1rem;
             color: #ffffff
@@ -103,7 +103,7 @@
         <div id="header">
             <div class="banner-title">
                 <span>
-                    学历认证结果
+                    邮箱认证成功
                 </span>
             </div>
         </div>
@@ -114,9 +114,9 @@
             <h2>请耐心等待,稍后从首页进入查看</h2>
         </div>
 
-        <div class="back-button"  id="btn">
+        <div class="back-button" id="btn">
             <div class="back-button-view">
-                <span href="">返回首页</span>
+                <a>返回首页</a>
             </div>
         </div>
     </div>
@@ -125,9 +125,8 @@
 <script type="text/javascript">
     var wrong = document.getElementById('btn');  
         wrong.onclick = function() {   
-        // window.history.go(-1);//返回上一页  
+        window.history.go(-1);//返回上一页  
         // window.history.back(-1);//返回上一页  
-        window.location = "./emilauth.html"
    }  
 
 </script>
